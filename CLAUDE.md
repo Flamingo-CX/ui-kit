@@ -420,6 +420,40 @@ Components automatically detect platform context and adapt:
 - **Class Variance Authority**: Component variant management
 - **Lucide React**: Icon system
 
+## StartWithOpenFrameButton Component
+
+The StartWithOpenFrameButton component provides branded CTA buttons with OpenFrame logo integration:
+
+### Available Modes
+- **`outline`** (default): Standard outline button with yellow/white logo colors
+- **`yellow`**: Yellow background with black text (high contrast for accessibility)
+- **`pink`/`purple`**: Flamingo pink background with white text and yellow/white logo
+
+### Usage Examples
+```typescript
+import { StartWithOpenFrameButton } from '@flamingo/ui-kit/components/features'
+
+// Default outline mode
+<StartWithOpenFrameButton>
+  Start Free Trial
+</StartWithOpenFrameButton>
+
+// Yellow mode (high visibility)
+<StartWithOpenFrameButton mode="yellow">
+  Try OpenFrame
+</StartWithOpenFrameButton>
+
+// Pink/Purple mode (Flamingo branding)
+<StartWithOpenFrameButton mode="pink" href="https://openframe.ai">
+  Explore OpenFrame
+</StartWithOpenFrameButton>
+```
+
+### Color Contrast & Accessibility
+- **Yellow mode**: Uses `text-ods-text-on-accent` (black) for maximum contrast
+- **Pink mode**: Uses `text-ods-text-primary` (white) for good contrast with pink background
+- **OpenFrame logo colors**: Automatically adjusted per mode for optimal visibility
+
 ## Component Migration Status (COMPLETED ✅)
 
 ### Successfully Migrated Components
